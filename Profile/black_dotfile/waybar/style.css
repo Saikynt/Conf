@@ -1,0 +1,39 @@
+window#waybar {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Monocraft Nerd Font";
+    font-size: 12px;
+    border-bottom: 2px solid #b6b5b5; 
+    
+}
+
+.modules-left, .modules-center, .modules-right {
+    background-color: transparent;
+}
+
+#clock,
+#cpu,
+#memory,
+#pulseaudio {
+    padding: 0 10px;
+    margin: 0 4px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+#bluetooth{
+    margin-right: 15px;
+}
+
+#custom-spotify{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#custom-power{
+    color:lavender;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ruta="$HOME/.config/prisma/nix"
+
+ultimoProfile=$(cat $ruta/profile_info)
+
+mv "$ruta/dotfiles" "$ruta/$ultimoProfile"
+mv "$ruta/$1" "$ruta/dotfiles"
+
+printf "%s" "$1" > "$ruta/profile_info"
+
+prisma build
+
+pkill -9 vesktop
+vesktop &
+
+awww img ~/.config/wallpaper/wallpaper.png
+
+/home/saiky/.spicetify/spicetify config current_theme Spoty
+/home/saiky/.spicetify/spicetify apply
+dbus-launch spotify

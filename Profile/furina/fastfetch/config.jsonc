@@ -1,0 +1,99 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+    	"source": "/home/saiky/.config/fastfetch/fastfetch.png",
+    	"type": "kitty",
+    	"height": 18,
+    	"padding": {
+    		"top": 3
+    	}
+    },
+    "display": {
+        "separator": ""
+    },
+    "modules": [
+	"break",
+        "break",
+        "break",
+	{
+            "type": "custom",
+            "format": "\u001b[97m  \u001b[94m  \u001b[96m  \u001b[94m  \u001b[96m  \u001b[94m  \u001b[96m  \u001b[97m "
+        },
+	"break",
+	{
+            "type": "title",
+            "keyWidth": 10,
+            "format": "\u001b[97m{user-name}\u001b[90m@\u001b[94m{host-name}\u001b[0m"    
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "94",  // = color4
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "94",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "94",  
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "cursor",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "terminalfont",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "datetime",
+            "format": "{1}-{3}-{11}",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "94", 
+        },
+        {
+            "type": "player",
+            "key": " ",
+            "keyColor": "94", 
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[97m  \u001b[94m  \u001b[96m  \u001b[94m  \u001b[96m  \u001b[94m  \u001b[96m  \u001b[97m "
+        },
+        "break",
+        "break",
+    ]
+}

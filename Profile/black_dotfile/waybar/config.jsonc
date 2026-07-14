@@ -1,0 +1,58 @@
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 34, 
+    "spacing": 2, 
+
+    "modules-left": ["niri/workspaces","custom/spotify"],
+    "modules-center": ["clock#time","clock#date"],
+    "modules-right": ["bluetooth", "pulseaudio", "cpu", "memory", "custom/power"],
+
+    "clock#time": {
+        "format": "{:%H:%M}",
+    },
+    "clock#date": {
+        "format": "{:%A-%d-%B-%Y}",
+        "tooltip": false,
+    },
+    "cpu": {
+        "format": "<span foreground='#aaaaaa'>Cpu:</span> {usage}",
+        "tooltip": false,
+    },
+    "memory": {
+        "format": "<span foreground='#aaaaaa'>Mem:</span> {percentage}",
+        "tooltip": false,
+    },
+
+    "pulseaudio": {
+        "format": "<span foreground='#aaaaaa'>Vol</span> {volume}%",
+        "format-muted": "MUTED"
+    },
+
+    "bluetooth":{
+       "format": " {status}",
+       "format-connected": " {device_alias}",
+       "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+       "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} conectados",
+       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} conectados\n\n{device_enumerate}",
+       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+       "on-click": "blueman-manager"
+    },
+    
+    "custom/spotify":{
+      "format": "  {}",
+      "return-type": "json",
+      "max-length": 40,
+      "escape": true,
+      "exec": "playerctl -p spotify metadata --format '{\"text\": \"{{artist}} - {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+      "on-click": "playerctl -p spotify play-pause"
+
+    },
+
+    "custom/power":{
+       "format": "⏻",
+       "tooltip": false,
+       "on-click": "wlogout -B 400 -L 400 -R 400 -T 400 || loginctl poweroff || poweroff"
+    }
+}
