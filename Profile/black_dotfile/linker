@@ -1,0 +1,17 @@
+niri.kdl -> ~/.config/niri/config.kdl
+alacritty.toml -> ~/.config/alacritty.toml
+starship.toml -> ~/.config/starship.toml
+wallpaper.png -> ~/.config/wallpaper/wallpaper.png
+quickCss.css -> ~/.config/vesktop/settings/quickCss.css
+config -> ~/.config/cava/config
+fuzzel.ini -> ~/.config/fuzzel/fuzzel.ini
+kitty.conf -> ~/.config/kitty/kitty.conf
+zshrc -> ~/.zshrc
+Spoty/color.ini -> ~/.config/spicetify/Themes/Spoty/color.ini
+Spoty/user.css -> ~/.config/spicetify/Themes/Spoty/user.css
+fastfetch/config.jsonc -> ~/.config/fastfetch/config.jsonc
+fastfetch/fastfetch.png -> ~/.config/fastfetch/fastfetch.png
+waybar/style.css -> ~/.config/waybar/style.css
+waybar/config.jsonc -> ~/.config/waybar/config.jsonc
+wlogout/style.css -> ~/.config/wlogout/style.css
+dancers/dancer-1.gif -> ~/.config/thdance/dancer-1.gif
