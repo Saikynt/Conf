@@ -1,0 +1,74 @@
+* {
+    box-shadow: none;
+    font-family: "Monocraft", monospace;
+}
+
+window {
+    background-color: rgba(12, 12, 12, 0.9);
+}
+
+/* Base de los botones: Negro absoluto con bordes grises */
+button {
+    border-radius: 0;
+    border-color: #b6b5b5; 
+    text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #000000; 
+    border-style: solid;
+    border-width: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    margin: 10px; 
+    transition: all 0.15s ease-in-out;
+
+    /* FORZAR QUE EL CONTENIDO GRÁFICO INTERNO DEL BOTÓN SEA BLANCO */
+    -gtk-icon-palette: error #ffffff, warning #ffffff, success #ffffff, info #ffffff;
+}
+
+/* Al pasar el mouse: El borde cambia a blanco brillante de forma plana */
+button:hover {
+    border-color: #FFFFFF;
+    background-color: #111111; 
+}
+
+/* Evitamos que el foco inicial congele el botón de Lock */
+button:focus {
+    outline-style: none;
+    background-color: #000000;
+    border-color: #b6b5b5;
+    color: #FFFFFF;
+}
+
+/* Arreglo para que el Lock responda al hover correctamente estando enfocado */
+button:focus:hover {
+    border-color: #FFFFFF;
+    background-color: #111111;
+}
+
+/* ==========================================================================
+   PATHS DE ICONOS Y MEZCLA BLANCA (Para quitarles el morado de fábrica)
+   ========================================================================== */
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

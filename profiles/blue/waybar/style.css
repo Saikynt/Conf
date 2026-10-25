@@ -1,0 +1,59 @@
+window#waybar {
+    background-color: transparent;
+    color: #e0f7fa;
+    font-family: "Go Mono";
+    font-size: 14px; 
+    
+}
+
+.modules-left, .modules-center, .modules-right {
+    background-color: transparent;
+}
+
+
+#clock,
+#cpu,
+#memory,
+#pulseaudio {
+    padding: 0 10px;
+    margin: 0 4px;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #e0f7fa;
+}
+
+#bluetooth{
+    margin-right: 15px;
+}
+
+#mpd{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+#custom-cava {
+    color: #e0f7fa; 
+    font-family: "Monocraft", monospace; 
+    font-size: 21px; 
+    padding-left: 6px;
+    padding-right: 6px;
+    background: transparent;
+    margin-bottom: 2px;
+} 
+
+
+#custom-power{
+    color: #e0f7fa;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#workspaces button{
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-right: 5px;
+}

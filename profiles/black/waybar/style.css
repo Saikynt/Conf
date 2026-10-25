@@ -1,0 +1,51 @@
+window#waybar {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Monocraft";
+    font-size: 12px;
+    border-bottom: 2px solid #b6b5b5; 
+    
+}
+
+.modules-left, .modules-center, .modules-right {
+    background-color: transparent;
+}
+
+#clock,
+#cpu,
+#memory,
+#pulseaudio {
+    padding: 0 10px;
+    margin: 0 4px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+#bluetooth{
+    margin-right: 15px;
+}
+
+#mpd{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+#custom-cava {
+    color: #ffffff; 
+    font-family: "Monocraft", monospace; 
+    font-size: 21px; 
+    padding-left: 6px;
+    padding-right: 6px;
+    background: transparent;
+    margin-bottom: 2px;
+} 
+
+
+#custom-power{
+    color:lavender;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}

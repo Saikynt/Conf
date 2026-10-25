@@ -1,0 +1,20 @@
+[terminal.shell]
+program = "/bin/zsh"
+args = ["--login"]
+
+[font]
+size = 11
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[window]
+opacity = 0.7
+
+[colors.primary]
+background = "#18171c" 
+foreground = "#adadca"
+
+[window.padding]
+x = 10
+y = 10
